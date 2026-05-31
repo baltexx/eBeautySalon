@@ -72,6 +72,38 @@ recommender-dokumentacija.md
 - Docker Compose
 - JWT autentifikacija i autorizacija
 
+## Trenutno stanje projekta
+
+Tema projekta eBeautySalon je prethodno odobrena.
+
+Trenutno je pripremljena pocetna struktura projekta koja ukljucuje:
+
+- pocetnu backend strukturu
+- pocetnu strukturu servisnog sloja
+- pocetnu strukturu modela
+- pocetnu strukturu worker servisa
+- pocetnu strukturu Flutter desktop aplikacije
+- pocetnu strukturu Flutter mobilne aplikacije
+- Docker Compose konfiguraciju
+- plan baze podataka
+- ER dijagram
+- dokumentaciju funkcionalnosti prihvacene teme
+- dokumentaciju sistema preporuke
+
+U narednim iteracijama bit ce implementirani:
+
+- SQL Server baza podataka
+- REST API funkcionalnosti
+- JWT autentifikacija i role-based autorizacija
+- CRUD moduli za glavne i referentne entitete
+- statusna logika rezervacija i narudzbi
+- RabbitMQ komunikacija i worker servis
+- payment integracija i refund logika ako payment ostaje u temi
+- PDF izvjestaji
+- sistem notifikacija
+- sistem preporuke sa objasnjenjima
+- finalni GitHub Release i `.env-tajne.zip`
+
 ## Pokretanje aplikacije
 
 Konfiguracijski podaci se cuvaju u `.env` datoteci koja se ne postavlja direktno na GitHub. Za predaju rada koristi se `.env-tajne.zip`.
@@ -97,13 +129,15 @@ flutter pub get
 flutter run --dart-define=API_BASE_URL=http://10.0.2.2:5000
 ```
 
-## Korisnicki podaci za testiranje
+## Testni korisnici
 
 | Kontekst | Korisnicko ime | Lozinka |
 |---|---|---|
 | Desktop verzija | desktop | test |
 | Mobilna verzija | mobile | test |
 | Vise korisnickih uloga | admin | test |
+| Zaposlenik | employee | test |
+| Klijent | client | test |
 
 ## Napomena
 
