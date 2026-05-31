@@ -40,7 +40,7 @@ Mobilni dio aplikacije zadrzava module iz prihvacene prijave:
 - Moje narudzbe
 - Sistem preporuke
 
-U odnosu na raniju prijavu i vodic kroz eSpaCenter, implementacija se prosiruje novim pravilima: JWT autentifikacija, role-based autorizacija, statusna logika rezervacija i narudzbi, RabbitMQ worker servis, server-side placanje/refund ako payment ostaje u temi, obavezna paginacija, validacije, centralizovana konfiguracija kroz `.env` i obavezna dokumentacija recommendera.
+U odnosu na raniju prijavu, implementacija se prosiruje novim pravilima: JWT autentifikacija, role-based autorizacija, statusna logika rezervacija i narudzbi, RabbitMQ worker servis, server-side placanje/refund ako payment ostaje u temi, obavezna paginacija, validacije, centralizovana konfiguracija kroz `.env` i obavezna dokumentacija recommendera.
 
 ## Planirana struktura projekta
 
